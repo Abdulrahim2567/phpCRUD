@@ -358,7 +358,7 @@
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="js/jquery/dist/jquery.dataTables.js"></script>
+  <script src="DataTables-1.11.4/media/js/jquery.dataTables.js"></script>
   <script type="text/javascript" src="DataTables-1.11.4/media/js/dataTables.bootstrap4.min.js"></script>
   <script src="phone/build/js/intlTelInput.js"></script>
   <script type = "text/javascript" src="js/table.js"></script>
