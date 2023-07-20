@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `users`
 --
 
-CREATE TABLE `users` (
+CREATE TABLE IF NOT EXISTS `users` (
   `Email` varchar(100) NOT NULL,
   `Username` varchar(100) DEFAULT NULL,
   `Phone` varchar(30) DEFAULT NULL,
@@ -41,6 +41,11 @@ CREATE TABLE `users` (
   `Status` varchar(10) DEFAULT 'active',
   `Type` varchar(10) DEFAULT 'user',
   `Active` varchar(10) DEFAULT 'offline'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS `update_list` (
+  `Email` varchar(100) NOT NULL,
+  `index` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -77,6 +82,10 @@ INSERT INTO `users` (`Email`, `Username`, `Phone`, `Gender`, `Location`, `CardTy
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
+  ADD PRIMARY KEY (`Email`);
+COMMIT;
+
+ALTER TABLE `update_list`
   ADD PRIMARY KEY (`Email`);
 COMMIT;
 

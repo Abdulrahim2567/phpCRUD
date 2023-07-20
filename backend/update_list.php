@@ -2,7 +2,7 @@
    //code to add pending user uopdates to server update list for other users
    if(!empty($_REQUEST['email']))
    {
-      require "connection.php";
+      require_once "connection.php";
       $conn->select_db("school");
       $email = $_REQUEST['email'];
       $index = $_REQUEST['indexValue'];
